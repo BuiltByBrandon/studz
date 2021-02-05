@@ -472,7 +472,8 @@ class DistroIndex {
      * @returns {string} The URL to the news RSS feed.
      */
     getRSS(){
-        return this.rss
+        logger.log("RSS HERE");
+        return this.rss;
     }
 
     /**
@@ -480,6 +481,13 @@ class DistroIndex {
      */
     getServers(){
         return this.servers
+    }
+
+    /**
+     * @returns {boolean} Yes or no to softWipeFiles
+     */
+    getSoftWipe(){
+        return this.softWipe
     }
 
     /**
@@ -523,6 +531,7 @@ exports.Types = {
 }
 
 let DEV_MODE = false
+
 
 const DISTRO_PATH = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
 const DEV_PATH = path.join(ConfigManager.getLauncherDirectory(), 'dev_distribution.json')

@@ -35,6 +35,23 @@ DistroManager.pullRemote().then((data) => {
 
     onDistroLoad(data)
 
+    // Softwipe Manager
+    const distroData = DistroManager.getDistribution();
+    logger.log(distroData);
+    const softWipeFiles = distroData.getSoftWipe();
+    const mainServer = distroData.getMainServer().getID();
+    if(softWipeFiles === true){
+        //logger.log((path.join(ConfigManager.getInstanceDirectory(), mainServer.toString(), "/mods").toString()));
+        //logger.log((path.join(ConfigManager.getDataDirectory(), "/instances/EssenceSMP-1.12.2/mods").toString()));
+        fs.remove(path.join(ConfigManager.getInstanceDirectory(), mainServer.toString(), "/mods"), (err) => {
+        if(err){
+            logger.warn('Error whist attempting to remove old mods...', err)
+        } else {
+            logger.log('Cleaned old mods...')
+        }
+    })
+    }
+
 }).catch((err) => {
     logger.log('Failed to load distribution index.')
     logger.error(err)
