@@ -514,7 +514,7 @@ exports.DistroIndex
 exports.Types = {
     Library: 'Library',
     ForgeHosted: 'ForgeHosted',
-    Forge: 'Forge', // Unimplemented
+    Forge: 'Forge', // Unimplemented Fix soon
     LiteLoader: 'LiteLoader',
     ForgeMod: 'ForgeMod',
     LiteMod: 'LiteMod',
