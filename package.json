@@ -1,6 +1,6 @@
 {
   "name": "studzlauncher",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "productName": "Studz Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "Brandon Guzman (https://github.com/18bguzma/)",
@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/18bguzma/studz/issues"
   },
-  "private": true,
+  "private": false,
   "main": "index.js",
   "scripts": {
     "start": "electron .",
