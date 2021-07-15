@@ -1,13 +1,13 @@
 {
   "name": "studzlauncher",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "productName": "Studz Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Brandon Guzman (https://github.com/18bguzma/)",
+  "author": "Brandon Guzman (https://github.com/BuiltByBrandon/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/18bguzma/studz/",
+  "homepage": "https://github.com/BuiltByBrandon/studz/",
   "bugs": {
-    "url": "https://github.com/18bguzma/studz/issues"
+    "url": "https://github.com/BuiltByBrandon/studz/issues"
   },
   "private": false,
   "main": "index.js",
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/18bguzma/Studz.git"
+    "url": "git+https://github.com/BuiltByBrandon/studz.git"
   }
 }
