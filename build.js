@@ -21,7 +21,7 @@ builder.build({
         appId: 'studzLauncher',
         productName: 'StudzLauncher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2020-2021 Brandon Guzman',
+        copyright: 'Copyright © 2021-2022 Brandon Guzman',
         directories: {
             buildResources: 'build',
             output: 'dist'
