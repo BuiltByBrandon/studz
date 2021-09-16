@@ -225,7 +225,7 @@ const refreshServerStatus = async function(fade = false){
     loggerLanding.log('Refreshing Server Status')
     const serv = DistroManager.getDistribution().getServer(ConfigManager.getSelectedServer())
 
-    let pLabel = 'SERVER'
+    let pLabel = 'SERVER'  
     let pVal = 'OFFLINE'
 
     try {
@@ -1122,7 +1122,7 @@ function loadNews(){
 
                     let link   = el.find('link').text()
                     let title  = el.find('title').text()
-                    let author = "Studzy"
+                    let author = 'Studzy'
 
                     // Generate article.
                     articles.push(

@@ -76,10 +76,30 @@ const DEFAULT_CONFIG = {
             maxRAM: resolveMaxRAM(), // Dynamic
             executable: null,
             jvmOptions: [
+                '-Xss4M ',
+                '-Dfile.encoding=GBK',
+                '-XX:+AggressiveOpts',
                 '-XX:+UseConcMarkSweepGC',
-                '-XX:+CMSIncrementalMode',
-                '-XX:-UseAdaptiveSizePolicy',
-                '-Xmn128M'
+                '-XX:+UseParNewGC',
+                '-XX:+CMSConcurrentMTEnabled',
+                '-XX:ParallelGCThreads=8',
+                '-Dsun.rmi.dgc.server.gcInterval=1800000',
+                '-XX:+UnlockExperimentalVMOptions',
+                '-XX:+ExplicitGCInvokesConcurrent',
+                '-XX:MaxGCPauseMillis=50',
+                '-XX:+AlwaysPreTouch',
+                '-XX:+UseStringDeduplication',
+                '-Dfml.ignorePatchDiscrepancies=true',
+                '-Dfml.ignoreInvalidMinecraftCertificates=true',
+                '-XX:-OmitStackTraceInFastThrow',
+                '-XX:+OptimizeStringConcat',
+                '-XX:+UseAdaptiveGCBoundary',
+                '-XX:NewRatio=3',
+                '-Dfml.readTimeout=90',
+                '-XX:+UseFastAccessorMethods',
+                '-XX:CMSInitiatingOccupancyFraction=75',
+                '-XX:+CMSScavengeBeforeRemark',
+                '-XX:+UseCMSInitiatingOccupancyOnly'
             ],
         },
         game: {
