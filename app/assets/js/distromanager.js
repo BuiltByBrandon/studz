@@ -472,8 +472,7 @@ class DistroIndex {
      * @returns {string} The URL to the news RSS feed.
      */
     getRSS(){
-        logger.log("RSS HERE");
-        return this.rss;
+        return this.rss
     }
 
     /**
