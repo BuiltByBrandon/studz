@@ -545,7 +545,7 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'https://raw.githubusercontent.com/BuiltByBrandon/EssenceCubed/main/distribution.json'
+        const distroURL = 'https://raw.githubusercontent.com/BuiltByBrandon/VHEssence/main/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
